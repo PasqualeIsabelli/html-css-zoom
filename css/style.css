@@ -2,4 +2,159 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, main, footer {
+    min-height: 100px;
+}
+
+main {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 0 95px;
+    max-width: 100vw;
+}
+
+footer {
+    background-color: #222222;
+}
+
+.box-header {
+    position: relative;
+}
+
+.cell {
+    color: white;
+    background-color: #3f3f3f;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 30px;
+}
+
+.maximize {
+    background-color: #3f3f3f;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+}
+
+.content {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-image: url("https://picsum.photos/200/300");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 175px;
+    margin: 5px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.name {
+    width: 120px;
+    background-color: rgba(128, 128, 128, 0.7);
+    background-size: cover;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-left {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+.microphone {
+    float: left;
+    width: 40%;
+}
+
+.video {
+    float: right;
+    width: 60%;
+}
+
+.microphone, .video {
+    height: 100px;
+    display: flex;
+}
+
+.icon {
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+    color: white;
+    margin: 0 20px 0 10px;
+}
+
+.icon-text {
+    color: white;
+    font-size: 15px;
+}
+
+.chevron {
+    font-size: 10px;
+    text-align: center;
+    align-self: center;
+}
+
+.footer-center {
+    float: left;
+    width: calc(100% - 350px);
+    height: 100px;
+}
+
+.box-footer-center{
+    margin: auto;
+    height: 100px;
+    width: 850px;
+    display: flex;
+}
+
+.invite, .polling, .share, .chat, .record, .more, .participants, .breakout {
+    height: 100px;
+    display: flex;
+}
+
+.share {
+    margin-right: 25px;
+}
+
+.footer-right {
+    float: right;
+    background-color: #4a4a4a;
+    width: 150px;
+    height: 100px;
+    display: flex;
+}
+
+.text-right {
+    color: red;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    /*centrare orizzontalmente*/
 }
